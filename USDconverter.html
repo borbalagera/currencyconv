@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USD Converter</title>
+    <link rel="stylesheet" href="USDconverterStyle.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <h1>converter</h1>  
+
+    <table>
+    <tr>
+    <td><select id="from" onchange="myFunction()"><option value="EUR">Euro - EUR</option></select></td>
+    <td><input type="text" id="fromAmount" onkeyup="myFunction()"/></td>
+    </tr>
+    <tr>
+    <td><select id="to" onchange="myFunction()"><option value="EUR">Euro - EUR</option></select></td>  
+    <td><input type="text" id="toAmount" disabled/></td>
+    </tr>
+    </table>
+</div>
+<div id="test"></div>
+
+<script src="USDconverterJS.js"></script>
+</body>
+</html>
